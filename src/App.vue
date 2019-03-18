@@ -330,11 +330,11 @@ body {
     <div id="header">
       <img
         id="header__logo"
-        src="/static/icon_logo@3x.png"
+        src="static/icon_logo@3x.png"
       />
       <img
         id="header__toggle"
-        src="/static/btn_list@3x.png"
+        src="static/btn_list@3x.png"
       />
     </div>
     <div id="shelf">
@@ -381,11 +381,11 @@ body {
             <img
               class="goods__item__operate__minus"
               :data-index="goodsIndex"
-              src="/static/btn_reduce_normal@3x.png"
+              src="static/btn_reduce_normal@3x.png"
             /><span class="goods__item__operate__count">{{goods.toBuyCount}}</span><img
               class="goods__item__operate__plus"
               :data-index="goodsIndex"
-              src="/static/btn_add_normal@3x.png"
+              src="static/btn_add_normal@3x.png"
             />
           </div>
         </div>
@@ -411,7 +411,7 @@ body {
           >
             <img
               id="shopping-cart__list__header__delete"
-              src="/static/icon_delete@3x.png"
+              src="static/icon_delete@3x.png"
             /><span id="shopping-cart__list__header__delete-tips">清除</span>
           </span>
         </div>
@@ -424,11 +424,11 @@ body {
           <div class="shopping-cart__list__item__operate">
             <img
               class="shopping-cart__list__item__operate__minus"
-              src="/static/btn_big_reduce@3x.png"
+              src="static/btn_big_reduce@3x.png"
               :data-id="toBuy.id"
             /><span class="shopping-cart__list__item__operate__count">{{toBuy.toBuyCount}}</span><img
               class="shopping-cart__list__item__operate__plus"
-              src="/static/btn_big_add@3x.png"
+              src="static/btn_big_add@3x.png"
               :data-id="toBuy.id"
             />
           </div>
@@ -438,7 +438,7 @@ body {
     <div id="footer">
       <img
         id="footer__shopping-cart"
-        src="/static/icon_shoppingcart@3x.png"
+        src="static/icon_shoppingcart@3x.png"
         @click="toggleShoppingCartList"
       />
       <span id="footer__badge">{{toBuyCountSum}}</span>
@@ -490,7 +490,7 @@ export default {
           monthlySales: '28',
           price: 28,
           originalPrice: 28,
-          pic: '/static/goods-pic.png',
+          pic: 'static/goods-pic.png',
           toBuyCount: 0,
           categotryId: categoryId
         })
