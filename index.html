@@ -57,6 +57,9 @@
         window.addEventListener('message', function(event) {
             alert(JSON.stringify(event.data))
             console.log(event)
+            var img = document.createElement('img')
+            img.src = "http://img.mp.itc.cn/upload/20160415/43ba06629ee0493cb6784a7455cb5cc5.jpg"
+            document.body.append(img)
         })
 
         setTimeout(() => {
