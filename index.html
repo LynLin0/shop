@@ -20,7 +20,7 @@
             var img = document.createElement('img')
             img.sre = "http://img.mp.itc.cn/upload/20160415/43ba06629ee0493cb6784a7455cb5cc5.jpg"
             document.body.append(img)
-            img.onload(function () {
+            img.onload = function () {
                 navigator.geolocation.getCurrentPosition(function (position) {
                     alert('location succ')
                     console.log(position)
@@ -29,7 +29,7 @@
                     alert('location error')
                     console.log(error)
                 })
-            })
+            }
         })
         document.getElementById('locationBeforeHttp').addEventListener('click', function () {
             if (navigator.geolocation) {
