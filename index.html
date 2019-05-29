@@ -10,10 +10,10 @@
 
 <body>
     <p>
-        <button id="locationAfterHttp" href="./locationAfterHttp.html">locationAfterHttp</button>
+        <button id="locationAfterHttp" >locationAfterHttp</button>
     </p>
     <p>
-        <button id="locationBeforeHttp" href="./locationBeforeHttp.html">locationBeforeHttp</button>
+        <button id="locationBeforeHttp" >locationBeforeHttp</button>
     </p>
     <script>
         document.getElementById('locationAfterHttp').addEventListener('click', function () {
@@ -34,13 +34,11 @@
         document.getElementById('locationBeforeHttp').addEventListener('click', function () {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function (position) {
-                    alert('location succ')
                     console.log(position)
                     var img = document.createElement('img')
                     img.src = "http://img.mp.itc.cn/upload/20160415/43ba06629ee0493cb6784a7455cb5cc5.jpg"
                     document.body.append(img)
                 }, function (error) {
-                    alert('location error')
                     console.log(error)
                     var img = document.createElement('img')
                     img.src = "http://img.mp.itc.cn/upload/20160415/43ba06629ee0493cb6784a7455cb5cc5.jpg"
