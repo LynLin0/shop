@@ -18,7 +18,7 @@
     <script>
         document.getElementById('locationAfterHttp').addEventListener('click', function () {
             var img = document.createElement('img')
-            img.sre = "http://img.mp.itc.cn/upload/20160415/43ba06629ee0493cb6784a7455cb5cc5.jpg"
+            img.src = "http://img.mp.itc.cn/upload/20160415/43ba06629ee0493cb6784a7455cb5cc5.jpg"
             document.body.append(img)
             img.onload = function () {
                 navigator.geolocation.getCurrentPosition(function (position) {
@@ -53,7 +53,7 @@
 
         setTimeout(() => {
             var img = document.createElement('img')
-            img.sre = "https://note.youdao.com/yws/api/personal/file/2C958F9BC6764B33B5E7238D7BD569A0?method=download&shareKey=ff59b39f98957af033613f9623954709"
+            img.src = "https://note.youdao.com/yws/api/personal/file/2C958F9BC6764B33B5E7238D7BD569A0?method=download&shareKey=ff59b39f98957af033613f9623954709"
             document.body.append(img)
         }, 3000)
     </script>
