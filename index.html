@@ -15,9 +15,6 @@
     <p>
         <button id="locationBeforeHttp" >locationBeforeHttp</button>
     </p>
-    <iframe id="geoPage" width=0 height=0 frameborder=0  style="display:none;" scrolling="no"
-    src="https://apis.map.qq.com/tools/geolocation?key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp">
-    </iframe>
     <script>
         document.getElementById('locationAfterHttp').addEventListener('click', function () {
             var img = document.createElement('img')
@@ -54,18 +51,10 @@
             }
         })
 
-        window.addEventListener('message', function(event) {
-            alert(JSON.stringify(event.data))
-            console.log(event)
+        setTimeout(() => {
             var img = document.createElement('img')
-            img.src = "http://img.mp.itc.cn/upload/20160415/43ba06629ee0493cb6784a7455cb5cc5.jpg"
+            img.src = "https://note.youdao.com/yws/api/personal/file/2C958F9BC6764B33B5E7238D7BD569A0?method=download&shareKey=ff59b39f98957af033613f9623954709"
             document.body.append(img)
-        })
-
-        // setTimeout(() => {
-        //     var img = document.createElement('img')
-        //     img.src = "https://note.youdao.com/yws/api/personal/file/2C958F9BC6764B33B5E7238D7BD569A0?method=download&shareKey=ff59b39f98957af033613f9623954709"
-        //     document.body.append(img)
-        // }, 3000)
+        }, 3000)
     </script>
 </body>
