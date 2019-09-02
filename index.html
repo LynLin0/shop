@@ -4,57 +4,9 @@
 <head>
     <meta charset=utf-8>
     <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
-    <title>shop</title>
-    <link href=./static/css/app.555b0188a5841564f4c3956378a1ce77.css rel=stylesheet>
+    <title>hybird</title>
 </head>
 
 <body>
-    <p>
-        <button id="locationAfterHttp" >locationAfterHttp</button>
-    </p>
-    <p>
-        <button id="locationBeforeHttp" >locationBeforeHttp</button>
-    </p>
-    <script>
-        document.getElementById('locationAfterHttp').addEventListener('click', function () {
-            var img = document.createElement('img')
-            img.src = "http://img.mp.itc.cn/upload/20160415/43ba06629ee0493cb6784a7455cb5cc5.jpg"
-            document.body.append(img)
-            img.onload = function () {
-                navigator.geolocation.getCurrentPosition(function (position) {
-                    alert('location succ')
-                    console.log(position)
-
-                }, function (error) {
-                    alert('location error')
-                    console.log(error)
-                })
-            }
-        })
-        document.getElementById('locationBeforeHttp').addEventListener('click', function () {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function (position) {
-                    console.log(position)
-                    alert('location succ')
-                    var img = document.createElement('img')
-                    img.src = "http://img.mp.itc.cn/upload/20160415/43ba06629ee0493cb6784a7455cb5cc5.jpg"
-                    document.body.append(img)
-                }, function (error) {
-                    console.log(error)
-                    alert('location error')
-                    var img = document.createElement('img')
-                    img.src = "http://img.mp.itc.cn/upload/20160415/43ba06629ee0493cb6784a7455cb5cc5.jpg"
-                    document.body.append(img)
-                })
-            } else {
-                alert('no location')
-            }
-        })
-
-        setTimeout(() => {
-            var img = document.createElement('img')
-            img.src = "https://note.youdao.com/yws/api/personal/file/2C958F9BC6764B33B5E7238D7BD569A0?method=download&shareKey=ff59b39f98957af033613f9623954709"
-            document.body.append(img)
-        }, 3000)
-    </script>
+    <p style="font-size:40px;text-align:center;color:#88ffff">测试虚拟域</p>
 </body>
